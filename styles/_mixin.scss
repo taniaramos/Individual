@@ -1,0 +1,20 @@
+@mixin image{
+  width: 50%;
+  display: flex;
+  align-self: center;
+  margin-left: 25%;
+}
+
+@mixin text{
+  font: 12px $font-text;
+  color: $color-main;
+  line-height: 21px;
+  margin: 2% 24.8% 0 25%;
+}
+
+@mixin menu{
+  font: 13px $font-menu;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: $color-main;
+}

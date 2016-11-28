@@ -9,7 +9,15 @@
 
   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:black" rel="stylesheet" type"text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:bold" rel="stylesheet" type"text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:regular" rel="stylesheet" type"text/css">
 
 </head>
 
@@ -17,31 +25,35 @@
 
 <header>
 
-<h1 class="home">TÂNIA RAMOS</h1>
+<h1><a href="openpage.html">TÂNIA RAMOS</a></h1>
 
-<ul>
-  <li class="home">Projects</li>
-
-    <ul class="home">
-      <li><a href="camposantos.html">Campos Santos Identity</a></li>
-      <li><a href="zen.html">Zen - Japanese Cuisine for everyone</a></li>
-      <li><a href="stevejobs.html">Steve Jobs</a></li>
-      <li><a href="break.html">Break</a></li>
-      <li><a href="gorreana.html">Gorreana</a></li>
-      <li><a href="transparent.html">Transparent - Ondjaki</a></li>
-      <li><a href="pagination.html">Editorial - Pagination</a></li>
-      <li><a href="light.html">Light</a></li>        <li><a href="petit.html">Petit-Gâteau</a></li>
-      <li><a href="vinyl.html">Vinyl</a></li>
-    </ul>
-
-  <li class="home"><a href="contact.html" class="contact">Contact</a></li>
+<ul id="nav" class="transition">
+  <li>PROJECTS
+  <div class="submenu">
+    <ul>
+    <li><a href="threefictions.html">Three Fictions<span></span></a></li>
+    <li><a href="camposantos.html">Campos Santos Identity<span></span></a></li>
+    <li><a href="zen.html">Zen - Japanese Cuisine for everyone<span></span></a></li>
+    <li><a href="stevejobs.html">Steve Jobs<span></span></a></li>
+    <li><a href="break.html">Break<span></span></a></li>
+    <li><a href="gorreana.html">Gorreana<span></span></a></li>
+    <li><a href="transparent.html">Transparent - Ondjaki<span></span></a></li>
+    <li><a href="pagination.html">Editorial - Pagination<span></span></a></li>
+    <li><a href="light.html">Light<span></span></a></li>
+    <li><a href="petit.html">Petit-Gâteau<span></span></a></li>
+    <li><a href="vinyl.html">Vinyl<span></span></a></li>
+  </ul>
+  </div>
+</li>
 </ul>
+
+<p id="contact"><a href="contact.html">CONTACT</a></p>
 
 </header>
 
-<div>
+<img id="firstone" src="images/threefictions.jpg" alt="Project Three Fictions Cover" />
 
-<img class="cover" src="images/identity.png" alt="Project Campos Santos Identity Cover" />
+<img src="images/identity.png" alt="Project Campos Santos Identity Cover" />
 
 <img src="images/zen.jpg" alt="Project Zen - Japanese Cuisine for everyone Cover" />
 
@@ -61,7 +73,11 @@
 
 <img src="images/vinyl.png" alt="Project Vinyl Cover" />
 
-</div>
+<p>© Faculdade de Belas Artes da Universidade do Porto | 2016 | Portefólio Tânia Ramos</p>
+
+<script src="scripts/jquery-3.1.1.js"></script>
+
+<script src="scripts/scripts.js"></script>
 
 </body>
 

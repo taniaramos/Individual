@@ -9,9 +9,17 @@
 
   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-  <link rel="stylesheet" type="text/css" href="reset.css" />
+  <link rel="stylesheet" type="text/css" href="styles/reset.css" />
 
-  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:black" rel="stylesheet" type"text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:bold" rel="stylesheet" type"text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:regular" rel="stylesheet" type"text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:regular" rel="stylesheet" type"text/css">
 
 </head>
 
@@ -19,37 +27,46 @@
 
 <header>
 
-  <h1 class="home"><a href="home.html" class="contact">TÂNIA RAMOS</a></h1>
+  <h1><a href="home.html">TÂNIA RAMOS</a></h1>
 
-  <ul>
-    <li class="home">Projects</li>
-
-      <ul class="home">
-        <li><a href="camposantos.html">Campos Santos Identity</a></li>
-        <li><a href="zen.html">Zen - Japanese Cuisine for everyone</a></li>
-        <li><a href="stevejobs.html">Steve Jobs</a></li>
-        <li><a href="break.html">Break</a></li>
-        <li><a href="gorreana.html">Gorreana</a></li>
-        <li><a href="transparent.html">Transparent - Ondjaki</a></li>
-        <li><a href="pagination.html">Editorial - Pagination</a></li>
-        <li><a href="light.html">Light</a></li>
-        <li><a href="petit.html">Petit-Gâteau</a></li>
-        <li><a href="vinyl.html">Vinyl</a></li>
-      </ul>
-
-    <li class="home"><a href="contact.html" class="contact">Contact</a></li>
+  <ul id="nav" class="transition">
+    <li><a href="home.html">PROJECTS</a>
+    <div class="submenu">
+      <ul>
+      <li><a href="threefictions.html">Three Fictions<span></span></a></li>
+      <li><a href="camposantos.html">Campos Santos Identity<span></span></a></li>
+      <li><a href="zen.html">Zen - Japanese Cuisine for everyone<span></span></a></li>
+      <li><a href="stevejobs.html">Steve Jobs<span></span></a></li>
+      <li><a href="break.html">Break<span></span></a></li>
+      <li><a href="gorreana.html">Gorreana<span></span></a></li>
+      <li><a href="transparent.html">Transparent - Ondjaki<span></span></a></li>
+      <li><a href="pagination.html">Editorial - Pagination<span></span></a></li>
+      <li><a href="light.html">Light<span></span></a></li>
+      <li><a href="petit.html">Petit-Gâteau<span></span></a></li>
+      <li><a href="vinyl.html">Vinyl<span></span></a></li>
+    </ul>
+    </div>
+  </li>
   </ul>
+
+  <p id="contact"><a href="contact.html">CONTACT</a></p>
 
 </header>
 
 <body>
 
-<h1 class="titulo">CONTACT</h1>
+<h2>CONTACT</h2>
 
-<img class="contact" src="images/contact.jpg" alt="Fotografia Pessoal" />
+<img id="photo" src="images/contact.jpg" alt="Fotografia Pessoal" />
 
-<p class="contact">My name's Tânia Ramos and I'm currently studying Communication Design at FBAUP, Portugal. This site is my portfolio. I'm available for work or if you have any questions about my work feel free to get in touch: tcrr96@sapo.pt</p>
+<p id="description">My name's Tânia Ramos and I'm currently studying Communication Design at FBAUP, Portugal. This site is my portfolio. I'm available for work or if you have any questions about my work feel free to get in touch: tcrr96@sapo.pt</p>
 
-  <!--A VER COLOCAR CAIXA DE SUBMISSÃO?-->
+<p>© Faculdade de Belas Artes da Universidade do Porto | 2016 | Portefólio Tânia Ramos</p>
+
+<script src="scripts/jquery-3.1.1.js"></script>
+
+<script src="scripts/scripts.js"></script>
 
 </body>
+
+</html>

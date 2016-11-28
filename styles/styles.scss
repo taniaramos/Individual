@@ -1,0 +1,127 @@
+@import "reset";
+
+@import "variables";
+
+@import "mixin";
+
+.begin {
+  font: 100% $font-name;
+  text-align: center;
+  color: lighten($color-main, 90%);
+  margin: 25% 20% 0 20%;
+  padding-bottom: 2%;
+  border-bottom: solid 1px lighten($color-main, 90%);
+}
+
+.begin span {
+  padding: 0px 6px;
+  transition: 0.3s;
+}
+
+.begin span.active {
+  color: $color-main;
+}
+
+header{
+  margin: 4% 10% 3% 35px;
+  position: fixed;
+  z-index: 0;
+}
+
+h1{
+  font: 180% $font-name;
+  letter-spacing: 1px;
+  clear: both;
+}
+
+#nav{
+  @include menu;
+  height: 18px;
+}
+
+#nav, #nav li{
+  display: block;
+  list-style: none;
+  position: relative;
+  margin: -2.1% 0 0 38.5em;
+}
+
+#nav li{
+  width: 14em;
+  margin-top: 0;
+}
+
+#nav .submenu{
+  font: 13px $font-menu;
+  font-weight: normal;
+  display: none;
+  position: absolute;
+  margin:16% 0 0 -38.5em;
+}
+
+#nav .submenu a{
+  display: block;
+  line-height: 34px;
+}
+
+#nav.transition li > .submenu{
+  opacity: 0;
+  display: block;
+  left: -9999px;
+  transition: 0.2s opacity ease-in, 0s left linear 0.22s;
+}
+
+#nav.transition > li:hover > .submenu, #nav.transition > li > .submenu li:hover > .submenu{
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+#nav.transition > li:hover > .submenu{
+    left: 0px;
+}
+
+#contact{
+  @include menu;
+  position: relative;
+  z-index:100;
+  margin: -1.4em 0 0 83em;
+  padding-left: 4%;
+}
+
+img{
+  @include image;
+}
+
+#firstone{
+  padding-top: 9%;
+}
+
+a:link{
+  color: $color-main;
+  text-decoration: none;
+}
+
+a:visited{
+  color: $color-main;
+}
+
+p{
+  font: 10px $font-menu;
+  color: lighten($color-main, 85%);
+  margin: 5% 0 1% 35px;
+}
+
+h2{
+  font: 145% $font-name;
+  letter-spacing: 3px;
+  margin: 0 0 2% 25%;
+  padding-top: 9%;
+}
+
+#photo{
+  @include image;
+}
+
+#description{
+  @include text;
+}
