@@ -1,15 +1,7 @@
 @mixin image{
   width: 50%;
-  display: flex;
-  align-self: center;
   margin-left: 25%;
-}
-
-@mixin text{
-  font: 12px $font-text;
-  color: $color-main;
-  line-height: 21px;
-  margin: 2% 24.8% 0 25%;
+  margin-top: -0.5%;
 }
 
 @mixin menu{

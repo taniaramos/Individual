@@ -1,3 +1,5 @@
+/*ANIMATION LETTERS NAME*/
+
 ( function( $ ) {
   $.fn.spanLetters = function() {
     this.each( function() {
@@ -32,7 +34,6 @@ function animateLetter( value ) {
     }, duration );
   }
 };
-
 
 function stopAnimateLetter( value ) {
   $( value ).removeClass( "active" );
@@ -87,4 +88,26 @@ $( ".begin" )
   .mouseleave( function() {
 
     stopEverything();
+});
+
+
+
+/*ANIMATION SCROLL TOP*/
+
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1500, function(){
+
+        window.location.hash = hash;
+      });
+    }
+  });
 });

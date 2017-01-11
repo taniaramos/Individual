@@ -4,34 +4,33 @@
 
 @import "mixin";
 
-.begin {
-  font: 100% $font-name;
-  text-align: center;
-  color: lighten($color-main, 90%);
-  margin: 25% 20% 0 20%;
-  padding-bottom: 2%;
-  border-bottom: solid 1px lighten($color-main, 90%);
-}
-
-.begin span {
-  padding: 0px 6px;
-  transition: 0.3s;
-}
-
-.begin span.active {
-  color: $color-main;
-}
+/*HEADER*/
 
 header{
   margin: 4% 10% 3% 35px;
   position: fixed;
-  z-index: 0;
+  z-index: 10;
 }
 
 h1{
   font: 180% $font-name;
   letter-spacing: 1px;
   clear: both;
+}
+
+.begin {
+  font: 190% $font-name;
+  text-align: left;
+  color: lighten($color-main, 90%);
+  margin-right: 30em;
+}
+
+.begin span {
+  transition: 0.3s;
+}
+
+.begin span.active {
+  color: $color-main;
 }
 
 #nav{
@@ -43,7 +42,7 @@ h1{
   display: block;
   list-style: none;
   position: relative;
-  margin: -2.1% 0 0 38.5em;
+  margin: -2.1% 0 0 38em;
 }
 
 #nav li{
@@ -56,7 +55,7 @@ h1{
   font-weight: normal;
   display: none;
   position: absolute;
-  margin:16% 0 0 -38.5em;
+  margin:16% 0 0 -38em;
 }
 
 #nav .submenu a{
@@ -84,16 +83,20 @@ h1{
   @include menu;
   position: relative;
   z-index:100;
-  margin: -1.4em 0 0 83em;
+  margin: -1.4em 0 0 82em;
   padding-left: 4%;
 }
+
+
+
+/*INDEX*/
 
 img{
   @include image;
 }
 
 #firstone{
-  padding-top: 9%;
+  margin-top: 10%;
 }
 
 a:link{
@@ -105,23 +108,261 @@ a:visited{
   color: $color-main;
 }
 
-p{
-  font: 10px $font-menu;
-  color: lighten($color-main, 85%);
-  margin: 5% 0 1% 35px;
+
+
+/*PROJECTS PAGE*/
+
+#projecttop{
+  position: absolute;
+  z-index: -10;
+  margin-top: -15%;
 }
+
+h3{
+  font: 70% $font-menu;
+  color: lighten($color-main, 50%);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: -1.5% 0 2% 25%;
+}
+
+.legend{
+  font: 11px $font-menu;
+  color: lighten($color-main, 70%);
+  margin: 1% 24.8% 5% 25%;
+}
+
+.site:link{
+  color: lighten($color-main, 50%);
+}
+
+.site:visited{
+  color: lighten($color-main, 50%);
+}
+
+
+
+/*CONTACT PAGE*/
 
 h2{
   font: 145% $font-name;
   letter-spacing: 3px;
   margin: 0 0 2% 25%;
-  padding-top: 9%;
+  padding-top: 9.9%;
 }
 
-#photo{
+.photo{
   @include image;
 }
 
 #description{
-  @include text;
+  font: 13px $font-menu;
+  line-height: 23px;
+  color: lighten($color-main, 50%);
+  margin: 1% 24.8% 5% 25%;
+}
+
+
+
+/*FOOTNOTE*/
+
+.top{
+  margin-top: 4%;
+}
+
+p{
+  font: 10px $font-menu;
+  line-height: 16px;
+  color: lighten($color-main, 85%);
+  margin: 5% 35px 1% 35px;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width:320px) and (max-width:567px){
+
+header{
+  width: 67%;
+  position: $querie-position;
+  margin: 12% 16.5% 0 16.5%;
+}
+
+h1{
+  text-align: $querie-align;
+}
+
+#nav, #nav li{
+  margin: 14% 0 0 0;
+}
+
+#nav li{
+  width: 5.7em;
+}
+
+#nav .submenu{
+  padding: 0 25em 1.2em 6em;
+  margin:1em 0 0 -6em;
+  background-color: $querie-background;
+  white-space: nowrap;
+}
+
+#nav .submenu a{
+  line-height: 23px;
+}
+
+#contact{
+  margin-left: 5.5em;
+  text-align: $querie-contact;
+}
+
+#firstone{
+  margin-top: 13em;
+}
+
+.begin{
+  text-align: $querie-align;
+  margin-right: 0;
+}
+
+h2{
+  margin: 6.6em 20% 2% 25%;
+}
+
+h3{
+  margin: -1.5% 20% 3% 25%;
+}
+
+.project{
+  position: $querie-position;
+}
+
+p{
+  margin-top: 5%;
+}
+}
+
+@media screen and (min-width:568px) and (max-width:1023px){
+
+header{
+  width: 90%;
+  position: $querie-position;
+  margin: 4% 5% 3% 5%;
+}
+
+#nav, #nav li{
+  margin: -4.5% 0 0 42%;
+}
+
+#nav li{
+  width: 13em;
+  background-color: $querie-background;
+  padding-left: 1.2em;
+}
+
+#nav .submenu{
+  padding: 1em;
+  margin:1em 0 0 -50%;
+}
+
+#nav .submenu a{
+  line-height: 40px;
+}
+
+#contact{
+  text-align: $querie-contact;
+  margin-left: 83.5%;
+}
+
+h1{
+  text-align: left;
+}
+
+#firstone{
+  margin-top: 15%;
+}
+
+.begin{
+  margin-right: 57%;
+}
+
+h2{
+  margin: 1.5em 20% 2% 25%;
+}
+
+h3{
+  margin-bottom: 3%;
+}
+
+.project{
+  position: $querie-position;
+}
+}
+
+@media screen and (min-width:736px) and (max-width:1023px){
+
+#nav, #nav li{
+  margin: -3% 0 0 49%;
+}
+
+#nav .submenu{
+  margin-left: -56%;
+}
+
+#contact{
+  margin-left: 84%;
+}
+}
+
+@media screen and (min-width:1024px) and (max-width:1090px){
+
+header{
+  width:93%;
+}
+
+#nav, #nav li{
+  margin: -2.7% 0 0 55%;
+}
+
+#nav .submenu{
+  margin-left: -55%;
+}
+
+#contact{
+  margin-left: 87.5%;
+  text-align: $querie-contact;
+}
+
+.begin{
+  margin-right: 77%;
+}
+
+.project{
+  position: $querie-position;
+}
+}
+
+@media screen and (min-width:1091px){
+
+header{
+  width: 94.5%;
+}
+
+.begin{
+  margin-right: 77%;
+}
+
+#nav, #nav li{
+  margin-left: 59%;
+}
+
+#nav .submenu{
+  margin-left: -60%;
+}
+
+#contact{
+  text-align: $querie-contact;
+  margin-left: 89%;
+}
 }
